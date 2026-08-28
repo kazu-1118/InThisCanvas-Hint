@@ -3,32 +3,230 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>In This Canvas - Hint</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Helvetica Neue",
+                "Yu Gothic",
+                sans-serif;
+        }
+
+        /* ページ上部 */
+
+        header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #777;
+        }
+
+        /* メイン部分 */
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* ステージ */
+
+        .stage {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .stage h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* ヒント */
+
+        details {
+            border-top: 1px solid #eee;
+            padding: 15px 5px;
+        }
+
+        details:last-child {
+            border-bottom: 1px solid #eee;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        summary:hover {
+            opacity: 0.6;
+        }
+
+        details p {
+            margin: 15px 10px 5px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* 答え */
+
+        .answer {
+            color: #b44444;
+        }
+
+        /* 下 */
+
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+            padding: 30px;
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <h1>In This Canvas</h1>
-    <h2>ヒントページ</h2>
+    <header>
+        <h1>In This Canvas</h1>
+        <p>HINT</p>
+    </header>
 
-    <p>見たいステージのヒントを開いてください。</p>
 
-    <h3>Stage 0</h3>
+    <main>
 
-    <details>
-        <summary>ヒント1</summary>
-        <p>これはStage 0のヒント1です。</p>
-    </details>
+        <div class="description">
+            <p>
+                攻略に詰まったときにご覧ください。<br>
+                上から順番に見ることをおすすめします。
+            </p>
+        </div>
 
-    <details>
-        <summary>ヒント2</summary>
-        <p>これはStage 0のヒント2です。</p>
-    </details>
 
-    <details>
-        <summary>答えを見る</summary>
-        <p>ここに答えを書きます。</p>
-    </details>
+        <!-- Stage 0 -->
+
+        <section class="stage">
+
+            <h2>Stage 0</h2>
+
+            <details>
+                <summary>ヒント 1</summary>
+
+                <p>
+                    まずは画面全体をよく観察してみましょう。
+                </p>
+            </details>
+
+
+            <details>
+                <summary>ヒント 2</summary>
+
+                <p>
+                    消しゴムが使える場所は、
+                    ステージの中だけとは限りません。
+                </p>
+            </details>
+
+
+            <details>
+                <summary>ヒント 3</summary>
+
+                <p>
+                    ステージ選択画面にも、
+                    消せるものがあるかもしれません。
+                </p>
+            </details>
+
+
+            <details>
+                <summary class="answer">答えを見る</summary>
+
+                <p>
+                    ここにStage 0の具体的な攻略方法を書きます。
+                </p>
+            </details>
+
+        </section>
+
+
+        <!-- Secret Goal -->
+
+        <section class="stage">
+
+            <h2>Stage 0 - Secret</h2>
+
+            <details>
+                <summary>ヒント 1</summary>
+
+                <p>
+                    通常のゴール以外にも、
+                    気になる場所はありませんか？
+                </p>
+            </details>
+
+
+            <details>
+                <summary>ヒント 2</summary>
+
+                <p>
+                    ペンで描ける場所をよく考えてみましょう。
+                </p>
+            </details>
+
+
+            <details>
+                <summary class="answer">答えを見る</summary>
+
+                <p>
+                    ここに隠しゴールへの行き方を書きます。
+                </p>
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        In This Canvas
+    </footer>
 
 </body>
 
